@@ -1,0 +1,38 @@
+server {
+	#include common/error.conf;
+        listen 80; #слушаем порт 80
+	root /home/dmelessa/web/; #расположение директории сайта
+	server_name _;
+
+	error_page 400 = /error400.html;
+	location  /error400.html {
+		internal;
+		root /;
+	}
+
+	try_files /index.html /index.htm /index.php;
+
+	# Этот блок location задаёт “/” в качестве префикса,
+        # который сравнивается с URI из запроса.
+        location / {
+		try_files $uri $uri.html /$uri /$uri.html =404;
+        }
+	
+	location = /pepega {
+		try_files /register.html =404;
+	}
+
+	location = /{
+		try_files /index.html /index.html /index.php =404;
+	}  
+                                                                                                      
+        #передаем PHP скрипты FastCGI серверу
+        location ~ \.php$ {
+		root	/home/dmelessa/web/php;
+                include snippets/fastcgi-php.conf;
+                fastcgi_pass unix:/run/php/php7.3-fpm.sock;
+#		fastcgi_param DOCUMENT_ROOT $document_root/php;
+#		fastcgi_param SCRIPT_FILENAME $fastcgi_script_name;
+#		fastcgi_param   SCRIPT_NAME        $fastcgi_script_name;
+	}
+}
