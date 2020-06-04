@@ -1,0 +1,200 @@
+body {
+	background-color: rgb(241, 241, 241);
+	margin: auto;
+}
+
+#login_form {
+	background-color: white;
+	height: 30px;
+	text-align: left;
+	padding: 30px;
+	padding-bottom: 5px;
+	margin: auto;
+}
+
+.losung {
+	color: rgb(34, 156, 255);
+	font-size: 20px;
+	font-family: sans-serif;
+	float: right;
+	margin-top: 1vh;
+}
+
+.site_name1 {
+	color:  rgb(34, 156, 255);
+	font-size: 30px;
+	font-family: sans-serif;
+	width: auto;
+}
+
+.site_name2 {
+	color: black;
+	font-size: 30px;
+	font-family: sans-serif;
+	width: auto;
+}
+
+.city {
+	color: black;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+#find_line {
+	background-color: rgb(34, 156, 255);
+	height: 40px;
+	text-align: center;
+}
+
+#forecast {
+	border-radius: 5px;
+	height: auto;
+	margin: auto;
+	text-align: center;
+}
+
+#forecast_table {
+	text-align: center;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 1vh;
+	width: 750px;
+	height: 250px;
+}
+
+#location {
+	background-color: white;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 4vh;
+	padding: 10px;
+	text-align: left;
+	width: 725px;
+}
+
+#location_name:hover {
+	text-shadow: 2px 2px 5px darkturquoise;
+
+}
+
+.anodec {
+	text-decoration: none;
+}
+.forecast_row{
+	background-color: white;
+	border-radius: 5px;
+	width: 60vh;
+	height: 8vh;
+}
+
+td {
+	border-radius: 5px;
+	border: 1px rgb(34, 156, 255);
+}
+
+#bottom {
+	color: rgb(177, 177, 177);
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+	text-align: center;
+	width: 100%;
+	font-family: monospace;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#login_button:visited, #login_button:link {
+	color: white;
+	height: 40px;
+	width: 500px;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#login_button:hover, #login_button:active {
+	background-color: rgb(34, 122, 255);
+}
+
+#citychoice {
+	float:right;
+	min-width: 100px;
+}
+
+/* Логин с выпадающим списком */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	background-color: rgb(34, 156, 255);
+}
+
+.dropdown-content {
+	display: none;
+	font-size:30px;
+	position: relative;
+	text-shadow: 1px 1px 3px red;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content a {
+	background-color: rgb(34, 156, 255);
+	text-decoration: none;
+	display: block;
+}
+.dropdown-content a:hover {
+	background-color:  rgb(34, 122, 255);
+}
+
+#login_menu {
+	display: none;
+}
+
+#profile {
+	text-decoration: none;
+}
+
+#login {
+	color: white;
+	text-shadow: 1px 1px 3px red;
+	height: 50px;
+	font-size: 30px;
+	text-decoration: none;
+	margin: auto;
+}
+
+#login:hover, #login:active {
+	background-color: rgb(34, 122, 255);
+}
+
+#login:visited, #login:link {
+	color: white;
+	display: inline-block;
+}
+
+#logout {
+	text-decoration: none;
+	color:white;
+}
+
+.heart {
+  font-size: 25px;
+	color:red;
+}
+.star {
+	font-size: 25px;
+	color:gold;
+}
+
+.checked {
+  color: orange;
+}
+
+.favcity {
+	margin: 5px;
+}

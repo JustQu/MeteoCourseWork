@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<html>
+	<head>
+		<title>
+			Meteo
+		</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="profile.css">
+	</head>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
+	</script>
+	<script src="profile.js"></script>
+	<body>
+		<!-- Шапка сайта с формой входа-->
+		<div id="login_form">
+			<span class="site_name1"><b>РосГидро</b></span>
+			<span class="site_name2"><b>МетеоЦентр</b></span>
+			<span class="losung">Погода</span>
+		</div>
+
+		<div id="find_line">
+			<a id="log_out" href="index.html" onclick="logout();">Выйти</a>
+		</div>
+
+		<div id="profile">
+			<img id="profile_img" src="stormtrooper.jpg">
+			<p id="user_login"></p>
+			<br>
+			<p id="user_location">Местоположение</p>
+			<hr>
+			<p style="font-size: 70px;">.</p><hr>
+			<a id="change_password" href="change_pass.html">Сменить пароль</a>
+			<br>
+			<a id="delete_account" href="#" onclick="delete_account();">удалить аккаунт</a>
+		</div>
+		<div id="bottom">
+			<hr>&copy; РосГидроМетеоЦентр&nbsp;
+			<br>
+			для некоммерческого использования.
+		</div>
+	</body>
+</html>

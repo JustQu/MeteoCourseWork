@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<html>
+	<head>
+		<title>Региcтрация</title>
+		<link rel="stylesheet" type="text/css" href="register.css"></link>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<body>
+		<div>
+			<!-- action="register.php"  method="POST" name="register.php"-->
+			<form action="javascript:void(0);" name="form" method="POST" on>
+				<div class="container">
+					<h1> Вход </h1>
+					<div id="ErrorField"></div>
+					<hr>
+
+					<!-- Поле ввода логина -->
+					<label for="login"><b>Логин</b></label>
+					<input id="login" name="login" type="text" placeholder="Введите логин"">
+					<div id="login_error" class="error_text"></div>
+
+					<!-- Поле ввода пароля -->
+					<label for="password1"><b>Пароль</b></label>
+					<input id="password" name="password" type="password" placeholder="Введите пароль" >
+					<div id="password_error" class="error_text"></div>
+
+					<hr>
+
+					<!-- <p> Создавая аккаунт вы согласны с нашими <a href="#"> условиями конфеденциальности</a>.</p> -->
+					<input id="register_button" class="register_button" type="submit" name="submit" disabled value="Войти" onclick="sign_in(this.form);">
+				</div>
+
+				<div class="container signin">
+					<a href="register" style="margin-right:5vw;">Зарегестрироваться</a>
+					<!-- <a href="register">Сменить пароль</a><br> -->
+					<a href="/">На главную</a>
+				</div>
+			</form>
+		</div>
+	</body>
+	<script src="sign_in.js"></script>
+</html>

@@ -1,0 +1,116 @@
+
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<title>
+				Meteo
+			</title>
+			<link rel="stylesheet" type="text/css" href="index.css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		</head>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+				integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+				crossorigin="anonymous">
+		</script>
+		<body>
+			<!-- Шапка сайта с формой входа-->
+		<div id="login_form">
+			<a style="text-decoration: none;" href="/">
+				<span class="site_name1"><b>РосГидро</b></span>
+				<span class="site_name2"><b>МетЦентр</b></span>
+				<span class="losung">Погода</span>
+			</a>
+		</div>
+			<!-- Поисковик -->
+
+			<div id="find_line">
+				<div id="login_menu" class="dropdown">
+					<a id="profile" href="/profile">
+						<span id="login">login</span>
+					</a>
+					<div class="dropdown-content">
+						<a id="logout" href="#" onclick="logout();">Выйти</a>
+					</div>
+				</div>
+				<a id="login_button" href="/sign_in">
+					Войти
+				</a>
+			</div>
+
+			<!-- Выбор местоположения-->
+			<div id="location">
+				<a class="anodec" href="#">
+					<span id='location_name' class="city" onclick="show_indications();">Москва</span>
+				</a>
+				<span id='temperatureB' class="city" style="color: rgb(34, 156, 255);">+20</span>
+				<span id="star" class="fa fa-star""></span>
+				<span style="float:right">Выбрать другой город</span><br>
+				<span id='timeB' style="color: black; font-size: 20px;">Пятница, 1 Июня</span>
+
+				<select id="citychoice" onchange="set_city();">
+
+				</select>
+			</div>
+
+			<!-- отображение погоды -->
+			<div id="forecast">
+				<table id="forecast_table">
+					<tbody>
+						<tr class="forecast_row">
+						<th>Время</th>
+						<td id='time'>
+
+						</td>
+					</tr>
+					<tr class="forecast_row">
+						<th>Температура</th>
+						<td id='temperature'>
+
+						</td>
+					</tr>
+					<tr class="forecast_row">
+						<th>Влажность</th>
+						<td id='humidity'>
+
+						</td>
+					</tr>
+					<tr class="forecast_row">
+						<th>Давление</th>
+						<td id='pressure'>
+
+						</td>
+					</tr>
+					<tr class="forecast_row">
+						<th>Скорость ветра</th>
+						<td id='wind_speed'>
+
+						</td>
+					</tr>
+					<tr class="forecast_row">
+						<th>Направление ветра</th>
+						<td id='wind_direction'>
+
+						</td>
+					</tr>
+					<tr class="forecast_row">
+						<th>Осадки</th>
+						<td id='precipitations'>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="favourite">
+				<p>Избранное</p>
+			</div>
+			</div>
+			<div id="bottom">
+				<hr>
+				© РосГидроМетЦентр&nbsp;
+				<br>
+				Для некоммерческого использования.
+			</div>
+</body>
+<script src="index.js"></script>
+</html>
+0

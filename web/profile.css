@@ -1,0 +1,122 @@
+#login_form {
+	background-color: white;
+	height: 30px;
+	text-align: left;
+	padding: 30px;
+	padding-bottom: 5px;
+	margin: auto;
+}
+
+#profile {
+	background-color: white;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 4vh;
+	padding: 10px;
+	text-align: center;
+	width: 725px;
+	height: 100vmin;
+}
+
+.city {
+	color: black;
+	font-size: 30px;
+	font-family: sans-serif;
+}
+
+#bottom {
+	color: rgb(177, 177, 177);
+	margin-top: 5vh;
+	margin-bottom: 3vh;
+	text-align: center;
+	width: 100%;
+	font-family: monospace;
+	font-size: 20px;
+	font-style: italic;
+}
+
+#profile_img {
+	float: left;
+	width: 30vh;
+	height: 30vh;
+	padding-right: 6vh;
+	padding-left: 2vh;
+}
+
+#user_login {
+	font-size: 30px;
+	display: inline-block;
+	padding-top: 2vh;
+}
+
+#user_location {
+	font-size: 30px;
+	display: inline-block;
+}
+
+#delete_accaount {
+	margin-top: 10vh;
+	text-align: right;
+	font-size: 20px;
+}
+
+#change_password {
+	background-color: rgb(34, 156, 255);
+	margin-top: 5vh;
+}
+
+#change_password:link #change_password:hover{
+	background-color: rgb(34, 122, 255);
+}
+
+#change_password:link, #change_password:visited {
+	color: white;
+	height: 40px;
+	width: 500px;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#delete_account {
+	background-color: rgb(34, 156, 255);
+	margin-top: 5vh;
+	text-decoration: none;
+}
+
+#delete_account:link #delete_account:hover{
+	background-color: rgb(34, 122, 255);
+	text-decoration: none;
+}
+
+#delete_account:link, #delete_account:visited {
+	color: white;
+	height: 40px;
+	width: 500px;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+#log_out {
+	background-color: rgb(34, 156, 255);
+	text-decoration: none;
+	color: white;
+}
+
+#log_out:link #log_out:hover{
+	background-color: rgb(34, 122, 255);
+	text-decoration: none;
+}
+
+#log_out:link, #log_out:visited {
+	color: white;
+	height: 40px;
+	width: 500px;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	display: inline-block;
+}

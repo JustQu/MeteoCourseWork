@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<html>
+	<head>
+		<title>Смена пароля</title>
+		<link rel="stylesheet" type="text/css" href="register.css"></link>
+	</head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="sign_in.js"></script>
+	<body>
+		<div>
+			<!-- action="register.php"  method="POST" name="register.php"-->
+			<form action="javascript:void(0);" name="form" method="POST" on>
+				<div class="container">
+					<h1> Смена пароля </h1>
+					<div id="ErrorField"></div>
+					<hr>
+
+					<!-- Поле ввода логина -->
+					<!-- <label for="login"><b>Логин</b></label>
+					<input id="login" name="login" type="text" placeholder="Введите логин" onfocusout="check_login(this);">
+					<div id="login_error" class="error_text"></div> -->
+
+					<!-- Поле ввода пароля -->
+					<label for="password1"><b>Пароль</b></label>
+					<input id="password" name="password" type="password" placeholder="Введите пароль" >
+					<div id="password_error" class="error_text"></div>
+
+					<!-- Подтверждение пароля -->
+					<lable for="password-repeat"><b>Повторите пароль</b></lable>
+					<input id="password-repeat" type="password" placeholder="Повторите пароль">
+					<div id="password-repeat_error" class="error_text"></div>
+					<hr>
+
+					<!-- <p> Создавая аккаунт вы согласны с нашими <a href="#"> условиями конфеденциальности</a>.</p> -->
+					<input id="register_button" class="register_button" type="submit" name="submit" disabled value="Сменить пароль" onclick="sign_in(this.form);">
+				</div>
+
+				<!-- <div class="container signin">
+					<p>Уже есть аккаунт? <a href="sign_in.html">Войти</a></p>
+				</div> -->
+			</form>
+		</div>
+	</body>
+
+</html>

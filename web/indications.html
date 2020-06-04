@@ -1,0 +1,54 @@
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>
+		Meteo
+	</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="indications.css">
+</head>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
+			</script>
+<body>
+	<!-- Шапка сайта с формой входа-->
+	<div id="login_form">
+		<a style="text-decoration: none;" href="/">
+		<span class="site_name1"><b>РосГидро</b></span>
+		<span class="site_name2"><b>МетЦентр</b></span>
+		<span class="losung">Погода</span>
+		</a>
+	</div>
+
+	<div id="find_line">
+		<div id="login_menu" class="dropdown">
+			<span id="login"> login </span>
+			<div class="dropdown-content">
+				<a onclick="logout();">Выйти</a>
+			</div>
+		</div>
+		<a id="login_button" href="sign_in">Войти</a>
+	</div>
+
+	<!-- отображение погоды -->
+	<div id="forecast">
+		<table id="forecast_table">
+			<tr id="title_row">
+				<th>Время</th>
+				<th>Температура</th>
+				<th>Влажность</th>
+				<th>Давление</th>
+				<th>Осадки</th>
+				<th>Скорость ветра</th>
+				<th>Направление</th>
+			</tr>
+		</table>
+	</div>
+	<div id="bottom">
+		<hr>© РосГидроМетЦентр&nbsp;
+		<br>
+		исключительно для некоммерческого использования.
+	</div>
+</body>
+<script src="indications.js"></script>
+</html>
